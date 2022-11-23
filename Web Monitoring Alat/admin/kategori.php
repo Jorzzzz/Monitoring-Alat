@@ -6,13 +6,12 @@
 	if(isset($_POST['addcategory']))
 	{
 		$namakategori = $_POST['namakategori'];
-			  
 		$tambahkat = mysqli_query($conn,"insert into kategori (namakategori) values ('$namakategori')");
 		if ($tambahkat){
 		echo "
 		<meta http-equiv='refresh' content='1; url= kategori.php'/>  ";
 		} else { echo "
-		 <meta http-equiv='refresh' content='1; url= kategori.php'/> ";
+		<meta http-equiv='refresh' content='1; url= kategori.php'/> ";
 		}
 		
 	};
@@ -73,7 +72,6 @@
                     <nav>
                         <ul class="metismenu" id="menu">
 							<li><a href="index.php"><span>Home</span></a>
-                             
                             </li>
                             <li><a href="../"><span>Halaman Awal</span></a></li>
 							<li class="active">
@@ -167,7 +165,7 @@
 													<td><?php echo $p['namakategori'] ?></td>
 													<td><?php 
 												    
-														$result1 = mysqli_query($conn,"SELECT Count(id) AS count FROM alat p, kategori k where p.idkategori=k.idkategori and k.idkategori='$id' order by id ASC");
+														$result1 = mysqli_query($conn,"SELECT Count(idalat) AS count FROM alat p, kategori k where p.idkategori=k.idkategori and k.idkategori='$id' order by idalat ASC");
 														$cekrow = mysqli_num_rows($result1);
 														$row1 = mysqli_fetch_assoc($result1);
 														$count = $row1['count'];
@@ -188,7 +186,7 @@
 										</tbody>
 										</table>
                                     </div>
-								 </div>
+								</div>
                             </div>
                         </div>
                     </div>

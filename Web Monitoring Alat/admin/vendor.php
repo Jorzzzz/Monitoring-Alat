@@ -173,7 +173,6 @@
             
             <!-- page title area end -->
             <div class="main-content-inner">
-               
                 <!-- market value area start -->
                 <div class="row mt-5 mb-5">
                     <div class="col-12">
@@ -184,7 +183,7 @@
 									<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-info col-md-2">Tambah Data</button>
                                 </div>
                                     <div class="data-tables datatable-dark">
-										 <table id="dataTable3" class="display" style="width:100%"><thead class="thead-dark">
+										<table id="dataTable3" class="display" style="width:100%"><thead class="thead-dark">
 											<tr>
 												<th>No.</th>
 												<th>Nama</th>
@@ -222,13 +221,15 @@
 											?>
 										</tbody>
 										</table>
+									
+									<button style="margin-bottom:20px" class="btn btn-dark col-md-2"> <a href="export_excel.php" ><span>Export Data Ke Excel</span></a></button>
                                     </div>
-								 </div>
+								</div>
                             </div>
                         </div>
                     </div>
                 </div>
-              
+
                 
                 <!-- row area start-->
             </div>
