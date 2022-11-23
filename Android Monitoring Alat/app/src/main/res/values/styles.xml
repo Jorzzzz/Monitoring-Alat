@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "Theme.MonitoringAlatBMKGJava" parent = "Theme.AppCompat.Light.NoActionBar">
+    <item name = "colorPrimary">@color/primarycolor</item >
+    <item name = "colorSecondary">@color/secondarycolor</item >
+    </style >
+</resources>

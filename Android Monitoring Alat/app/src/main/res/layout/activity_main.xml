@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gambar1" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="137dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/winter" />
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/wind"/>
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bmkg" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppinsblack"
+        android:text="MONITORING ALAT\n      BMKG SORONG"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:id="@+id/img_5"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/text_1"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/flow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_1"
+        android:text="© 2022 BMKG Sorong. All rights reserved"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:textSize="13dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
