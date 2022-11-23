@@ -125,14 +125,30 @@ $s = $_POST['idkategori'];
 								<ul class="nav navbar-nav">
 									<li class="active"><a href="index.php" class="act">Home</a></li>	
 									<!-- Mega Menu -->
-									
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategori <b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Kategori</h6>
+														
+														<?php 
+														$kat=mysqli_query($conn,"SELECT * from kategori order by idkategori ASC");
+														while($p=mysqli_fetch_array($kat)){
+
+															?>
+														<li><a href="kategori.php?idkategori=<?php echo $p['idkategori'] ?>"><?php echo $p['namakategori'] ?></a></li>
+																				
+														<?php
+																	}
+														?>
 													</ul>
 												</div>	
 												
 											</div>
 										</ul>
 									</li>
-								</ul>
 							</div>
 							</nav>
 			</div>
