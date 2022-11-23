@@ -222,7 +222,7 @@
 										</tbody>
 										</table>
 									
-									<button style="margin-bottom:20px" class="btn btn-dark col-md-2"> <a href="export_excel.php" ><span>Export Data Ke Excel</span></a></button>
+									<button style="margin-bottom:20px" class="btn btn-dark mt-2 col-md-2"> <a href="export_excel.php" ><span>Export Data Ke Excel</span></a></button>
                                     </div>
 								</div>
                             </div>
