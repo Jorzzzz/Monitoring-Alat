@@ -2,7 +2,7 @@
 session_start();
 include 'dbconnect.php';
 
-$s = $_POST['idkategori'];
+$idk = $_GET['idkategori'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -193,7 +193,7 @@ $s = $_POST['idkategori'];
 				
 				
 				<?php 
-					$brgs=mysqli_query($conn,"SELECT * from alat where idkategori order by idalat ASC");
+					$brgs=mysqli_query($conn,"SELECT * from alat where idkategori='$idk' order by idalat ASC");
 					$x = mysqli_num_rows($brgs);
 					
 					if($x>0){
